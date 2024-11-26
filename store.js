@@ -63,4 +63,28 @@ const translations = {
     document.querySelectorAll(".add-to-cart").forEach(button => {
       button.textContent = translations[lang].addToCart;
     });
+    
   }
+  document.querySelectorAll('.product').forEach(product => {
+    product.dataset.price = "500";
+    const priceElement = product.querySelector('.price');
+    if (priceElement) {
+      priceElement.textContent = "Giá: 500$";
+    } else {
+      const newPrice = document.createElement('p');
+      newPrice.className = 'price';
+      newPrice.textContent = "Giá: 500$";
+      product.appendChild(newPrice);
+    }
+  });
+
+  document.querySelectorAll(".add-to-cart").forEach(button => {
+    button.addEventListener("click", event => {
+      const name = event.target.dataset.name;
+      const price = 500; // Giá cố định là 500$
+      
+      cart.push({ name, price });
+      updateCart();
+    });
+  });
+  

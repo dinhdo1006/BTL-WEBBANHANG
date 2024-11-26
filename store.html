@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop Quần Áo</title>
   <link rel="stylesheet" href="store.css">
-  <link rel="stylesheet" href="store.js">
-</head>
+  <script src="store.js" defer></script>
 <body>
   <header class="header">
     <div class="logo">SHOP CLOTHING</div>
@@ -17,13 +16,12 @@
         <li><a href="#women">NỮ</a></li>
         <li><a href="#kids">TRẺ EM</a></li>
         <li><a href="#sport">ĐỒ THỂ THAO</a></li>
-        <li><a href="#dolot"> ĐỒ LÓT </a></li>
-        <li><a href="#app">ỨNG DỤNG</a></li>
       </ul>
     </nav>
     <div class="actions">
       <input type="text" placeholder="Tìm kiếm...">
-      <a href="#account">Tài khoản</a>
+      <a href="taikhoan.html">Tài khoản</a>
+
       <a href="#cart">Giỏ hàng</a>
     </div>
   </header>
@@ -32,61 +30,81 @@
     <h1>Black November</h1>
     <p>Giảm giá đến <span>50%</span> từ 13/11 - 01/12</p>
   </section>
-
   <section id="black-november" class="product-section">
     <h2>Sản phẩm nổi bật mùa đông </h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nữ trắng">
+     <div class="products">
+        <div class="product" data-price="500">
+        <img src="https://dosi-in.com/file/detailed/468/dosiin-dkmv-ao-khoac-nu-don-t-kill-my-vibe-vai-du-mau-trangform-rong-co-non-original-468720468720.jpg?w=670&h=670&fit=fill&fm=webp" alt="Áo nữ trắng">
         <p>Áo khoác nữ - Trắng</p>
-      </div>
+        <button class="add-to-cart" data-name="Áo nữ trắng" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
+     </div>
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xám">
+        <div class="product" data-price="low" data-size="S"></div>
+        <img src="https://4menshop.com/images/thumbs/2022/04/ao-khoac-du-ra-ngang-ak027-mau-xam-16683-slide-products-624fbdaff2415.JPG" alt="Áo nam xám">
         <p>Áo khoác nam - Xám</p>
+        <button class="add-to-cart" data-name="Áo nam xám" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nữ kem">
+        <div class="product" data-price="low" data-size="S"></div>
+        <img src="https://maylanstore.com/wp-content/uploads/2022/10/ao-khoac-hoodie-zip-mau-kem-5-1024x1024.jpg" alt="Áo nữ kem">
         <p>Áo khoác nữ - Kem</p>
+        <button class="add-to-cart" data-name="Áo nữ kem" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xanh dương">
+        <div class="product" data-price="low" data-size="S"></div>
+        <img src="https://www.chapi.vn/img/product/2023/5/4/ao-khoac-nam-co-dung-bhg-16-500x500.jpg" alt="Áo nam xanh dương">
         <p>Áo khoác nam - Xanh dương</p>
+        <button class="add-to-cart" data-name="Áo nam xanh dương" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
-
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xanh dương">
+        <div class="product" data-price="low" data-size="S"></div>
+        <img src="https://product.hstatic.net/200000605631/product/__2__381846ee0d3c4bcf99d66c63622e84e8_f89251cfe755470a8ac561b23ff9207f_bfa233f352cd49d28fcaed499053bc04_master.jpg" alt="Áo giữ nhiệt nam xanh dương">
         <p>Áo giữ nhiệt nam- Xanh dương</p>
+        <button class="add-to-cart" data-name="Áo giữ nhiệt nam xanh dương" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
-
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xanh dương">
+        <div class="product" data-price="low" data-size="S"></div>
+        <img src="https://cdn0375.cdn4s.com/media/h1316/3.jpg" alt="Áo giữ nhiệt nam- Đen">
         <p>Áo giữ nhiệt nam - Đen </p>
+        <button class="add-to-cart" data-name="Áo giữ nhiệt nam - Đen" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
-
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xanh dương">
-        <p>Áo giữ nhiệt nữ thời trang nam - Xanh ngọc hoa văn</p>
+        <div class="product" data-price="low" data-size="S"></div>
+        <img src="https://product.hstatic.net/1000354082/product/econie2195_750_e1f1b633d943460fa450132ea8c85985_master.png" alt="Áo giữ nhiệt nữ thời trang - Xanh">
+        <p>Áo giữ nhiệt nữ thời trang  - Xanh </p>
+        <button class="add-to-cart" data-name="Áo giữ nhiệt nữ thời trang - Xanh" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
-
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xanh dương">
+        <div class="product" data-price="low" data-size="S"></div>
+        <img src="https://img.lazcdn.com/g/ff/kf/Scf0b45da6ad54d6ea3a851bded5ddd4an.jpg_400x400q75.jpg_.webp" alt="Combo quần áo ngủ mùa đông nam - Xám">
         <p>Combo quần áo ngủ mùa đông nam - Xám </p>
+        <p class="price">Giá: 500$</p>
+        <button class="add-to-cart" data-name="Combo quần áo ngủ mùa đông nam - Xám" data-price="500">Thêm vào giỏ</button>
       </div>
-
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xanh dương">
-        <p>Combo quần áo ngủ mùa đông nữ - Xám </p>
+        <div class="product" data-price="high" data-size="L"></div>
+        <img src="https://down-vn.img.susercontent.com/file/b6d92d5cba236c27172013cd34a9f595@resize_w900_nl.webp" alt="Comno quần áo ngủ nữ ">
+        <p>Combo quần áo ngủ mùa đông nữ  </p>
+        <p class="price">Giá: 500$</p>
+        <button class="add-to-cart" data-name="Combo quần áo ngủ nữ" data-price="500">Thêm vào giỏ</button>
       </div>
-
       <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xanh dương">
-        <p>Combo quần áo ngủ trẻ em - Xám</p>
+        <div class="product" data-price="high" data-size="L"></div>
+        <img src="https://salt.tikicdn.com/cache/750x750/ts/product/3b/c9/9f/dde08001e14952d9c0bee0df8db32127.jpg.webp" alt="Áo ngủ trẻ em">
+        <p>Combo quần áo ngủ mùa đông trẻ em </p>
+        <button class="add-to-cart" data-name="Áo ngủ trẻ em" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
-
+      </div>
     </div>
   </section>
-  <footer class="footer">
-    <p>© 2024 Shop Clothing. Tất cả các quyền được bảo lưu.</p>
   </footer>
   <section id="black-november" class="product-section">
     <h2>Sản phẩm nổi bật của shop</h2>
@@ -106,61 +124,76 @@
     </div>
     <div class="products" id="product-list">
       <div class="product" data-price="low" data-size="S">
-        <img src="https://via.placeholder.com/150" alt="Áo nữ trắng">
+        <div class="product" data-price="500"></div>
+        <img src="https://dosi-in.com/file/detailed/468/dosiin-dkmv-ao-khoac-nu-don-t-kill-my-vibe-vai-du-mau-trangform-rong-co-non-original-468720468720.jpg?w=670&h=670&fit=fill&fm=webp" alt="Áo nữ trắng">
         <p>Áo khoác nữ - Trắng</p>
+        <button class="add-to-cart" data-name="Áo nữ trằng" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
       <div class="product" data-price="medium" data-size="M">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xám">
+        <img src="https://4menshop.com/images/thumbs/2022/04/ao-khoac-du-ra-ngang-ak027-mau-xam-16683-slide-products-624fbdaff2415.JPG" alt="Áo nam xám">
         <p>Áo khoác nam - Xám</p>
+        <button class="add-to-cart" data-name="Áo nam xám" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
+      </div>
+
+      <div class="product" data-price="low" data-size="S">
+        <img src="https://www.chapi.vn/img/product/2023/5/4/ao-khoac-nam-co-dung-bhg-16-500x500.jpg" alt="Áo nam xanh">
+        <p>Áo khoác nam - Xanh</p>
+        <button class="add-to-cart" data-name="Áo nam xanh" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
 
       <div class="product" data-price="medium" data-size="M">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xám">
-        <p>Áo khoác nam - Xám</p>
+        <img src="https://linhvnxk.com/wp-content/uploads/2024/08/ai-khoac-kaki-uniqlo-chong-nuoc-mountain-parka-11.jpg" alt="Áo nam xám">
+        <p>Áo khoác nam -Vàng</p>
+        <button class="add-to-cart" data-name="Áo nam - Xám" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
 
-      <div class="product" data-price="medium" data-size="M">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xám">
-        <p>Áo khoác nam - Xám</p>
-      </div>
-
-      <div class="product" data-price="medium" data-size="M">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xám">
-        <p>Áo thể thao nam </p>
+      <div class="product" data-price="low" data-size="S">
+        <img src="https://5sfashion.vn/storage/upload/images/ckeditor/wbo3GbUhihOGCaGb6fqXx56pVbBHwU5YpbUqsCCl.jpg" alt="Áo thể thao nam">
+        <p>Áo quần thể thao mùa đông nam </p>
+        <button class="add-to-cart" data-name="Áo thể thao nam" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
       
       <div class="product" data-price="medium" data-size="M">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xám">
-        <p>Quần thể thao nam </p>
-      </div>
-
-      <div class="product" data-price="medium" data-size="M">
-        <img src="https://via.placeholder.com/150" alt="Áo nam xám">
-        <p>Bộ quần áo thể thao nữ</p>
+        <img src="https://bossi.vn/wp-content/uploads/2023/12/kd29-1.jpg" alt="Khăn quấn cổ mùa đông">
+        <p>Khăn quấn cổ mùa đông </p>
+        <button class="add-to-cart" data-name="Khăn quấn cổ mùa đông" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
 
       <div class="product" data-price="high" data-size="L">
-        <img src="https://via.placeholder.com/150" alt="Áo nữ kem">
+        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/403/511/products/o1cn01x2b4sq1pbd8ovl9ay3177275.jpg" alt="Bộ quần áo thể thao nữ">
+        <p>Bộ quần áo thể thao mùa đông nữ</p>
+        <button class="add-to-cart" data-name="Bộ quần áo thể thao nữ" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
+      </div>
+
+      <div class="product" data-price="high" data-size="L">
+        <img src="https://sakurafashion.vn/upload/sanpham/large/1059920671-ao-khoac-nu-hinh-chu-soc-ngo-nghinh-3.jpg" alt="Áo nữ kem">
         <p>Áo khoác nữ - Kem</p>
+        <button class="add-to-cart" data-name="Áo nữ kem" data-price="500">Thêm vào giỏ</button>
+        <p class="price">Giá: 500$</p>
       </div>
     </div>
   </section>
   <div class="product">
-    <img src="https://via.placeholder.com/100" alt="Áo nữ trắng">
+    <div class="product" data-price="500"></div>
+    <img src="https://dosi-in.com/file/detailed/468/dosiin-dkmv-ao-khoac-nu-don-t-kill-my-vibe-vai-du-mau-trangform-rong-co-non-original-468720468720.jpg?w=670&h=670&fit=fill&fm=webp" alt="Áo nữ trắng">
     <p>Áo khoác nữ - Trắng</p>
-    <button class="add-to-cart" data-name="Áo khoác nữ - Trắng" data-price="300000">Thêm vào giỏ</button>
+    <button class="add-to-cart" data-name="Áo khoác nữ - Trắng" data-price="500">Thêm vào giỏ</button>
+    <p class="price">Giá: 500$</p>
   </div>
   <section id="cart">
     <h2>Giỏ hàng</h2>
     <ul id="cart-items"></ul>
     <p id="total-price">Tổng: 0₫</p>
   </section>
-
-
-
-
-
-
-
+</form>
+</form>
+    <p>© 2024 Shop Clothing. Tất cả các quyền được bảo lưu.</p>
 </body>
 </html>

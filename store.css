@@ -78,8 +78,8 @@ body {
   
   .products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr); /* 4 sản phẩm trên một hàng */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
   }
   
   .product {
@@ -90,9 +90,10 @@ body {
   }
   
   .product img {
-    width: 100%;
+    width:90%; /* Hình ảnh chiếm toàn bộ chiều ngang của khung */
     border-radius: 5px;
   }
+  
   
   .product p {
     margin-top: 10px;
@@ -137,10 +138,15 @@ body {
   
   .language-switcher button {
     background: #ff3d00;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     margin: 0 5px;
     border-radius: 3px;
+  }
+  .price {
+    font-weight: bold;
+    color: #ff5722;
+    margin-top: 10px;
   }
